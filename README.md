@@ -20,7 +20,7 @@ follow a link, and those actions tell the browser to go somewhere else and get
 the data. A technical way to describe that is: "The browser implements an HTTP
 `GET` to retrieve the content at a URL." It's also 100% technically correct to
 say "`fetch()` uses an HTTP `GET` to retrieve the content specified by a URL."
-
+ 
 The browser also provides a helpful model for understanding what _sending_ data
 from the browser looks like. We know this as an HTML _form_. Technically
 speaking, HTML forms "use an HTTP `POST` to send content gathered in `<input>`
