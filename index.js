@@ -14,21 +14,20 @@ const submitData = () => {
   })
 })
  .then(response => response.json())
- .then(json => renderToDom(json))
+ .then(json => //renderToDom(json)) or
+    {
+        document.body.innerHTML = json["id"]
+    })
  .catch(function(error) {
-
     document.body.innerHTML = error
   })
-
-//   .catch( function ( error ) {
-//     // display error message in the body instead of id
-//   } )
 }
 submitData()
 
-function renderToDom(json) {
-    document.body.innerHTML = json["id"]
-}
+//Saved for lated
+// function renderToDom(json) {
+//     document.body.innerHTML = json["id"]
+// }
 
 
 // function renderToDom(json) {
